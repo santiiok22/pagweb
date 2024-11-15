@@ -1,0 +1,65 @@
+body {
+	background-color: rgb(22, 21, 22);
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+h1{
+	color:white;
+	font-style:italic;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: arial, sans-serif;
+	text-decoration: underline;
+}
+
+h2{
+	color:white;
+	font-style:italic;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+	text-transform: capitalize;
+}
+
+p{
+	text-indent: 30px;
+}
+
+button {
+	display: flex;
+	flex-direction: column;
+	width: 3rem;
+	height: 3rem;
+	border: 0;
+	background: transparent;
+	gap: .65rem;
+}
+
+button > div {
+	background: black;
+	height: 2px;
+	width: 100%;
+	border-radius: 5px;
+	transition: all .5s;
+	transform-origin: left;
+}
+
+button:hover div:first-child {
+	transform: rotate(45deg);
+}
+
+button:hover div:nth-child(2) {
+	opacity: 0;
+}
+
+button:hover div:last-child {
+	transform: rotate(-45deg);
+}
+
+#header
+{
+	margin:auto;
+	width:500px;
+	font-family: arial;
+}
