@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./je.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title> Longitud de circunferencia de un circulo </title>
+</head>
+<body>
+    <h2> Calculo del area y la Longitud de un Circulo </h2>
+    <script>
+        alert("Bienvenido, ingrese un numero que sera usado como radio de un circulo para reportar el area y longitud de circunferencia.")
+        let radio = parseFloat(prompt("Ingrese el radio del círculo:"));
+
+        if (isNaN(radio) || radio <= 0) {
+            alert("Por favor, ingrese un radio válido (mayor que cero).");
+        } else {
+            let area = Math.PI * Math.pow(radio, 2);  
+            let longitud = 2 * Math.PI * radio;       
+
+            alert(`El área del círculo es: ${area.toFixed(2)}`);
+            alert(`La longitud de la circunferencia es: ${longitud.toFixed(2)}`);
+        }
+    </script>
+
+<center> <button class="btn-volver">
+    <a href="G:\Carpeta Digital\index.html"> Volver </a>
+    </button> </center>
+    
+</body>
+</html>

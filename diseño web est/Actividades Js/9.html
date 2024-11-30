@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./je.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title> Descuento por compra </title>
+</head>
+<body>
+    <h1> 20% de descuento a los clientes cuya compra supere los $100 </h1>
+    <script>
+        let montoCompra = parseFloat(prompt("Ingrese el monto de su compra:"));
+
+        if (isNaN(montoCompra) || montoCompra <= 0) {
+            alert("Por favor, ingrese un monto válido.");
+        } else {
+            let totalAPagar;
+
+            if (montoCompra > 100) {
+                totalAPagar = montoCompra * 0.8; 
+                alert(`Su compra supera los $100. Total con descuento: $${totalAPagar.toFixed(2)}`);
+            } else {
+                totalAPagar = montoCompra;
+                alert(`Su compra no supera los $100. Total a pagar: $${totalAPagar.toFixed(2)}`);
+            }
+        }
+    </script>
+
+<center> <button class="btn-volver">
+    <a href="G:\Carpeta Digital\index.html"> Volver </a>
+    </button> </center>
+
+</body>
+</html>

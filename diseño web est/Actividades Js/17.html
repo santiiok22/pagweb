@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./je.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title> bucle do-while con Menu </title>
+</head>
+<body>
+    <h1> Menu de opciones </h1>
+    <script>
+        var opcion = 0, salida = 0;
+        let frase;
+
+        do {
+            opcion = parseFloat(prompt("Bienvenido a nuestro menú, tiene 3 opciones: \n1: Menú\n2: Configuracion\n3: Salir"));
+            switch (opcion) {
+                case 1:
+                    alert("Este es el menú.");
+                    break;
+                case 2:
+                    alert("Esta es la configuración.");
+                    break;
+                case 3:
+                    salida = salida + 1;
+                    break;
+                default:
+                    alert("Por favor, elija una opción válida.");
+            }
+        } while (salida == 0);
+
+        frase = 'Usted eligió la opción salir, chau :D!';
+        document.write('<div style="font-size: 30px; color: white;">' + frase + '</div>');
+    </script>
+
+    <center> <button class="btn-volver">
+      <a href="G:\Carpeta Digital\index.html"> Volver </a>
+    </button> </center>
+    
+</body>
+</html>

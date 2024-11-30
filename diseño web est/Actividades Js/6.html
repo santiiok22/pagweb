@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./je.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title> Calculo de descuento </title>
+</head>
+<body>
+    <h1> Un cliente desea saber el precio de su compra si tiene un 15% de descuento </h1>
+    <script>
+        let montoCompra = parseFloat(prompt("Ingrese el monto total de su compra:"));
+
+        if (isNaN(montoCompra) || montoCompra <= 0) {
+            alert("Por favor, ingrese un monto válido.");
+        } else {
+            let descuento = montoCompra * 0.15;
+            let totalAPagar = montoCompra - descuento;
+
+            alert(`El total con un 15% de descuento es: $${totalAPagar.toFixed(2)}`);
+        }
+    </script>
+
+<center> <button class="btn-volver">
+    <a href="G:\Carpeta Digital\index.html"> Volver </a>
+    </button> </center>
+    
+</body>
+</html>

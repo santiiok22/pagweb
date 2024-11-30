@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./je.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title> Bucle do-while para ingresar numeros </title>
+</head>
+<body>
+    <h1> Ingreso de numeros </h1>
+    <script>
+        var numero = 1, numero_total = 0, frase;
+
+        do {
+            numero = parseFloat(prompt("Ingrese un número mayor a cero (Para finalizar ponga 0.)"));
+            numero_total = numero_total + numero;
+        } while (numero > 0);
+
+        frase = 'Ingresó el número 0. El bucle terminó, sumando los números que puso en el bucle da un total de ' + numero_total;
+        document.write('<div style="font-size: 30px; color: white;">' + frase + '</div>');
+    </script>
+    
+    <center> <button class="btn-volver">
+        <a href="G:\Carpeta Digital\index.html"> Volver </a>
+        </button> </center>
+        
+</body>
+</html>

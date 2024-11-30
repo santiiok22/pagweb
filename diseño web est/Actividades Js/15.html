@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./je.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title> Contraseña </title>
+</head>
+<body>
+    <h1> Verificación de Contraseña </h1>
+    <script>
+        var contraseña, pase = 0;
+        const contraseña_verdadera = "34";
+        let frase;
+
+        do {
+            contraseña = prompt("Ingrese su contraseña");
+            if (contraseña == contraseña_verdadera) {
+                pase = pase + 1;
+                frase = 'Contraseña correcta.';
+                document.write('<div style="font-size: 30px; color: white;">' + frase + '</div>');
+            } else {
+                alert("Contraseña incorrecta, intente de nuevo.");
+            }
+        } while (pase == 0);
+    </script>
+
+<center> <button class="btn-volver">
+    <a href="G:\Carpeta Digital\index.html"> Volver </a>
+    </button> </center>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./je.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title> Nota promedio </title>
+</head>
+<body>
+    <h1> Nota de pruebas para saber si el alumno aprueba o no </h1>
+    <script>
+        alert("En esta pagina se vera si aprobo o no, pero usted debe ingresar sus notas.");
+        alert("Si no tiene mas de 70 es porque usted es un boludo.");
+        var not1 = parseInt(prompt("Ingrese su nota de examen aqui."));
+        var not2 = parseInt(prompt("Ingrese su nota de tp aqui."));
+        var not3 = parseInt(prompt("Ingrese su nota final aqui."));
+        var prom = (not1+not2+not3)/3;
+        if (prom>69) {
+        document.write("Felicidades, usted aprobo con un promedio de: "+prom+".");
+        }else{
+        document.write("Boludoooooo desaprobaste con un promedio de: "+prom+".");
+        }
+    </script>
+
+<center> <button class="btn-volver">
+    <a href="G:\Carpeta Digital\index.html"> Volver </a>
+    </button> </center>
+
+</body>
+</html>

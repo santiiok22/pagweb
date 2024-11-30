@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./je.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title> Par o Impar </title>
+</head>
+<body>
+    <h1> Ingresar un numero y reportar si es Par o Impar</h1>
+    <script>
+        let numero = parseInt(prompt("Ingrese un número entero:"));
+
+        if (isNaN(numero)) {
+            alert("Por favor, ingrese un número entero válido.");
+        } else {
+            if (numero % 2 === 0) {
+                alert(`El número ${numero} es par.`);
+            } else {
+                alert(`El número ${numero} es impar.`);
+            }
+        }
+    </script>
+
+<center> <button class="btn-volver">
+    <a href="G:\Carpeta Digital\index.html"> Volver </a>
+    </button> </center>
+
+</body>
+</html>
